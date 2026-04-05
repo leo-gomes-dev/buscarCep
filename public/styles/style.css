@@ -10,6 +10,16 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  max-width: 100%;
+  font-family: sans-serif;
+  overflow: hidden;
+}
 /* Remove as setas no Firefox */
 input[type="number"] {
   -moz-appearance: textfield;
@@ -21,10 +31,12 @@ input[type="number"] {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
-  max-width: 400px;
-  margin: 20px auto;
-  font-family: sans-serif;
+  padding: 60px;
+  margin: 15px;
+  height: 100%;
+  max-width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 #cepInput {
   width: 100%;
