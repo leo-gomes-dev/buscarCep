@@ -2,6 +2,8 @@ const btnBuscarCep = document.getElementById("btnBuscarCep");
 const cepInput = document.getElementById("cepInput");
 const message = document.querySelector("#resultado-cep .message");
 
+cepInput.focus();
+
 // input cep
 const containsCep = cepInput.addEventListener("input", () => {
   const valor = cepInput.value.replace(/\D/g, "");
@@ -58,8 +60,8 @@ async function buscarCep() {
 function novaConsulta() {
   cepInput.value = "";
   message.innerHTML = "Digite um cep para ser consultado";
-  cepInput.focus();
   cepInput.disabled = false;
+  cepInput.focus();
 }
 
 // btn-toogle
